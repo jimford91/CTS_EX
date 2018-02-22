@@ -1,0 +1,15 @@
+Server resources for running jobs should be kept below a certain threshold such as 80/90%
+
+Priority on jobs, so higher ones get processed sooner 
+	Possibly on less busy servers
+	
+A job should record its progress so it can easily be restarted elsewhere in the result of a failure
+
+Failover for the distributing system
+
+Errors are assigned against a job and the progress is also remembered. 
+A failure should not stop other jobs executing with those resources
+
+In the result of a full server failure all job progress will have been saved and there are 2 scenarios
+	Have backup servers for when a failure happens
+	Give the jobs prority so that they are executed first

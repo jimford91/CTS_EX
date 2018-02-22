@@ -38,7 +38,7 @@ public class ColumnHeadersTest {
     }
 
     @Test
-    public void testBDCReturn() {
+    public void testCUZReturn() {
         Assert.assertEquals("CUZ", headers.evaluateColumnNumber(2600));
     }
 }

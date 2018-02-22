@@ -1,0 +1,28 @@
+Inserting data:
+
+Check the size of the current database
+If the remaining size is lower than that of the current record to enter
+	create a unique identifier based off the database name, table name and record id
+	Create a new database and table for that record then insert the record
+else
+	create a unique identifier based off the database name, table name and record id
+	Add the data to the existing database
+end
+
+Discussion on DB structure:
+
+Depending on the design of the databases and how the grouping of data the following models could be used:
+	Enter any data in to the first accessible database
+	Have a database that covers a certain grouping of tables, such as a DB for product info (pricing, names, information) and another for personal info (name, address, bank details)
+	Have a separate database for each table (probably a bad idea because most tables won't have enough information to fill the 1GB limit)
+
+Obtaining data using identifier:
+
+Locate the database using the identifier
+Locate the table using the identifier
+Locate the record using the identifier
+
+Obtaining data using search criteria (table(s) will be specified):	
+
+Obtain all identifiers from all databases for the given table(s)
+cycle through the data to obtain the required information matching the other search criteria
