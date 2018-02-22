@@ -1,4 +1,4 @@
-package com.cts.interview.headers;
+package com.cts.interview.folders;
 
 import com.cts.interview.folders.FileSystemMigrator;
 import com.cts.interview.folders.IDFolder;
